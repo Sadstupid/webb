@@ -97,8 +97,14 @@
       location.href="join4.html";
     };
 
+    function cancel() {
+      var form = document.join3form;
+      form.reset(); // 입력지움.
+    }
+
     function search() {
       window.name = "join3form"
+      form.submit();
       window.open("./join3_1.html", "join3_1form", "width=430, height=350, resizable=no, scrollbars=no");
     };
 
@@ -140,7 +146,7 @@
         <span class="sp05">회원가입을 위해서 아래의 양식에 있는 내용을 입력해 주셔야 합니다.</span><br>
         <span class="sp06">-회원님의 개인정보를 신중하게 보호하고 있으며 회원님의 동의 없이는 기재하신 회원정보가 누출되지 않습니다. 자세한 내용은 개인정보보호정책에서 확인하세요.</span>
     </div>
-    <form name="join3form">
+    <form action="#" name="join3form">
       <div class="box6">
         <span style="color: #777; font-weight: 350;">기본정보</span>
         <table class="table">
