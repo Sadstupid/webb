@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입3</title>
+
+  <!-- Main CSS : Header, Main, Footer -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/member/join.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Bootstarp JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#headerTop').load("../headerTop-sub.html");
+      $('#header').load("../header-sub.html");     
+      $('#footer').load("../footer-sub.html");
+    });
+
+    function join() {
+      var id = document.getElementById("pid");
+      var pw = document.getElementById("pw");
+      var repw = document.getElementById("repw");
+      var name = document.getElementById("name");
+      var email = document.getElementById("email");
+      var email02 = document.getElementById("email02");
+      var agree = document.getElementById("agree");
+      var disagree = document.getElementById("disagree");
+      var pwcheck = document.getElementById("pwcheck");
+      var man = document.getElementById("man");
+      var girl = document.getElementById("girl");
+
+      if (id.value == "") {
+        alert("아이디를 입력하세요.");
+        return false;
+      };
+
+      if (pw.value == "") {
+        alert("비밀번호를 입력하세요.");
+        pw.focus();
+        return false;
+      };
+
+      var ps = /^(?=.*[a-zA-Z])(?=.*[!@#$%^*+=-])(?=.*[0-9]).{8,25}$/;
+      if (!ps.test(pw.value)) {
+        alert("비밀번호는 영문자+숫자+특수문자 조합으로 8~16자리. 첫글자는 영문자로 사용해야합니다.");
+        pw.focus();
+        return false;
+      };
+
+      if (repw.value !== pw.value) {
+        alert("비밀번호 확인란이 비밀번호와 일치하지 않습니다.");
+        return false;
+      };
+
+      if (name.value == "") {
+        alert("이름을 입력하세요.");
+        name.focus();
+        return false;
+      };
+
+      if (email.value == "") {
+        alert("이메일을 입력하세요.");
+        email.focus();
+        return false;
+      };
+
+      if (email02.value == "") {
+        alert("이메일을 입력하세요.");
+        email02.focus();
+        return false;
+      };
+
+      if (!agree.checked && !disagree.checked) {
+        alert("이메일 수신여부를 체크하세요.")
+        return false;
+      };
+
+      if (pwcheck.value == "") {
+        alert("비밀번호 확인시 답변을 입력하세요.")
+        pwcheck.focus();
+        return false;
+      };
+
+      if (!man.checked && !girl.checked) {
+        alert("성별을 체크하세요.")
+        return false;
+      };
+      document.join3form.submit();
+      location.href="join4.html";
+    };
+
+    function search() {
+      window.name = "join3form"
+      window.open("./join3_1.html", "join3_1form", "width=430, height=350, resizable=no, scrollbars=no");
+    };
+
+  </script>
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <div id="headerTop"></div>
+  <div id="header" class="sticky-top"></div>
+
+  <!-- 메인 -->
+  <!-- COMMON -->
+  <div class="commonSection1">
+    <div class="commonContent1">
+      <img src="../img/member/sub-visual02.jpg" 
+          style="width: 100%; height: 100%;">
+      <div class="commonContent2 text-center">
+        <div>
+          <h3>MEMBER</h3>
+        </div>
+        <div>
+          <p><img src="../img/icon-home.png"> > 회원가입</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인 -->
+  <!-- 회원가입 -->
+  <div class="container">
+    <div class="tit01">회원가입</div>
+    <div class="tit02">The design and maintenance are excellent.</div>
+    <div class="box01">
+      <p class="sp01">OOO사이트에 오신 것을 환영합니다.</p>
+      <span class="sp02">-이름과 이메일을 입력해주시면 가입여부를 확인 후 회원가입 절차가 이루어집니다.</span>
+    </div>
+    <div class="box5">
+        <span class="sp05">회원가입을 위해서 아래의 양식에 있는 내용을 입력해 주셔야 합니다.</span><br>
+        <span class="sp06">-회원님의 개인정보를 신중하게 보호하고 있으며 회원님의 동의 없이는 기재하신 회원정보가 누출되지 않습니다. 자세한 내용은 개인정보보호정책에서 확인하세요.</span>
+    </div>
+    <form name="join3form">
+      <div class="box6">
+        <span style="color: #777; font-weight: 350;">기본정보</span>
+        <table class="table">
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">아이디</td>
+            <td style="padding: 5px 0 5px 10px;"class="td02"><input type="text" id="pid" name="id" style="width: 130px; height: 20px;" readonly onclick="search()"><img src="../img/member/btn_iddupl.gif" style="margin-left: 5px; cursor: pointer;" onclick="search()"> (영문 소문자, 숫자4~16자)</td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">비밀번호</td>
+            <td style="padding: 5px 0 5px 10px;"class="td02"><input type="password" id="pw" name="pw01" style="width: 130px; height: 20px;">&nbsp;&nbsp;&nbsp;&nbsp;영문/숫자/특수문자('~!@^*()-_+[]{}\:,.<>/) 조합으로 8~16자리. 첫글자는 영문자로 사용</td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">비밀번호 확인</td>
+            <td style="padding: 5px 0 5px 10px;"class="td02"><input type="password" id="repw" name="pw02" style="width: 130px; height: 20px;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">이름</td>
+            <td style="padding: 5px 0 5px 10px;"class="td02"><input type="text" id="name" name="name" style="width: 120px; height: 20px;" ></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">이메일</td>
+            <td style="padding: 5px 0 5px 10px; display: flex; flex-direction: row; align-items: center;" class="td02"><input type="text" id="email" name="email01" style="width: 120px; height: 20px;" ><span style="margin-bottom: 2px;">&nbsp;@&nbsp;</span><input type="text" id="email02" name="email02" style="width: 120px; height: 20px;" ></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">이메일 수신여부</td>
+            <td style="padding: 5px 0 5px 10px;" class="td02">
+              <input type="radio" id="agree" name="agree">수신<input type="radio" id="disagree" name="agree">수신안함
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">비밀번호 확인시 질문</td>
+            <td style="padding: 5px 0 5px 10px;" class="td02">
+              <select name="질문" style="font-size: 12px; width: 300px;">
+                <option value="질문"  selected>=======선택=======</option>
+                <option value="1">기억에 남는 추억의 장소는?</option><option value="2">자신의 인생 좌우명은?</option>
+                <option value="3">자신의 보물 제1호는?</option><option value="4">가장 기억에 남는 선생님 성함은?</option>
+                <option value="5">타인이 모르는 자신만의 신체비밀이 있다면?</option><option value="6">추억하고 싶은 날짜가 있다면?</option>
+                <option value="7">받았던 선물 중 기억에 남는 독특한 선물은?</option><option value="8">유년시절 가장 생각나는 친구 이름은?</option>
+                <option value="9">인상깊게 읽은 책 이름은?</option><option value="10">읽은 책 중에서 좋아하는 구절이 있다면?</option>
+                <option value="11">자신이 두 번째로 존경하는 인물은?</option><option value="12">친구들에게 공개하지 않은 어릴적 별명이 있다면?</option>
+                <option value="13">초등학교 때 기억에 남는 짝꿍 이름은?</option><option value="14">다시 태어나면 되고 싶은 것은?</option>
+                <option value="15">내가 좋아하는 캐릭터는?</option><option value="16">나의 주민등록번호 끝자리는?</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">비밀번호 확인시 답변</td>
+            <td style="padding: 5px 0 5px 10px;"class="td02"><input type="text" id="pwcheck" name="pwcheck" style="width: 200px; height: 20px;"></td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01">성별</td>
+            <td style="padding: 5px 0 5px 10px;" class="td02">
+              <input type="radio" id="man" name="gender"><label style="margin: 0;" for="man">남자</label>
+              <input type="radio" id="girl" name="gender"><label style="margin: 0;" for="girl">여자</label>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 5px 0 5px 0;" class="td01"><label style="margin: 0;" for="bithdate">생년월일</label></td>
+            <td style="padding: 5px 0 5px 10px;" class="td02"><input type="date" id="birthdate" style="width: 130px; height: 20px;"></td>
+          </tr>
+        </table>
+      </div>
+    </form>
+      <div class="box7">
+        <p style="color: #777; font-weight: 350; border-bottom: 1px solid #d1d1d1; margin-bottom: 20px;">부가정보</p>
+        <span class="span3"><img src="../img/member/btn_confirm.gif" style="cursor: pointer;" onclick="join()">&nbsp;<img src="../img/member/btn_cancel.gif" style="cursor: pointer;" onclick="cancel()"></span>
+      </div>
+  </div>
+
+  <!-- 푸터 -->
+  <div id="footer"></div>
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+.tit01 {
+    font-size: 28px;
+    margin: 50px 0 0px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #222;;
+  }
+  .tit02 {
+    font-size: 13px;
+    margin: 5px 0 45px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #999;
+  }
+  .ts01 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #444;;
+  }
+  .ts02 {
+    font-size: 15px;
+    margin: 0 0 80px 0;
+    text-align: center;
+    color: #777;
+    font-weight: normal;
+  }
+  .ts03 {
+    font-size: 16px;
+    margin: 20px 0 10px 0;
+    font-weight: 500;
+    text-align: start;
+  }
+  .ts04 {
+    font-size: 15px;
+    margin-bottom: 90px;
+    color: #777;
+    font-weight: normal;
+    text-align: start;
+  }
+  @media (max-width: 1024px){
+    .ts03 {
+      font-size: 14px;
+      margin: 16px 0 8px 0;
+    }
+    .ts04 {
+      font-size: 13px;
+      margin: 0 0 70px 0;
+    }
+  }
+  @media (max-width: 1200px){
+    .ts03 {
+      font-size: 15px;
+      margin: 16px 0 8px 0;
+    }
+    .ts04 {
+      font-size: 14px;
+      margin: 0 0 70px 0;
+    }
+  }

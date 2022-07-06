@@ -1,0 +1,50 @@
+.col-md-3 {
+    margin: 20px 0 10px 0;
+  }
+  .tit01 {
+    font-size: 28px;
+    margin: 50px 0 0px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #222;;
+  }
+  .tit02 {
+    font-size: 13px;
+    margin: 5px 0 45px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #999;
+  }
+  .img {
+    margin-bottom: 10px;
+    padding: 3px;
+  }
+  .p {
+    text-align: center;
+    font-weight: 500;
+    color: #666;
+  }
+  .select, .search, .submit {
+    display: block;
+    float: left;
+    margin-right: 2px;
+  }
+  .select {
+    border: 1px solid #999;
+    font-size: 13px;
+    color: #999;
+    width: 70px;
+    height: 28px;
+    padding-left: 5px;
+  }
+  .search {
+    border: 1px solid #999;
+    height: 28px;
+    font-size: 13px;
+    padding-left: 5px;
+    color: #888;
+  }
+  .submit {
+    border: 1px solid #999;
+    width: 30px;
+  }

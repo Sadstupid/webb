@@ -1,0 +1,1012 @@
+<!-- 캐러셀 섹션1 -->
+
+<!-- 섹션2 -->
+
+<!-- 섹션3 -->
+
+<!-- 섹션4 -->
+
+<!-- 섹션5 -->
+
+<!-- 섹션6 -->
+
+<style>
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+  }
+  
+
+
+  a:hover{text-decoration:none;}
+
+    .carousel-inner{
+        display: flex;
+        width: 100%; height: 800px;
+    }
+    img{
+        width: 100%; height: 100%;
+        object-fit: cover;    
+    }
+    .h5-1{
+        font-size: 70px;
+        position: absolute;
+        top: -500px;
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    }
+    .p1{      
+        font-size: 30px;
+        position: absolute;
+        top: -400px; 
+        text-shadow: 1px 1px 1px rgb(0, 0, 0);
+    }
+    .carousel-inner button{
+        position: absolute;
+        top: -330px; 
+        left: 0px;
+        box-shadow: 1px 1px 1px black
+    }
+/* --------------------------------------스타일 섹션1끝-------------------- */
+    .section2{
+      flex-flow: row wrap;
+      display: flex;
+      margin: 0 auto;
+      
+    }
+    .section2 .h2box{
+    margin-top: 200px;
+      flex: 1 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .section2 .pbox{
+      margin-top: 30px;
+      flex: 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .section2 .pbox p{
+      text-align: center;
+      color: gray
+    }
+    .section2 .btnbox{
+      margin-top: 20px;
+      flex: 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+/* ---------------------------스타일 섹션2끝--------------------------- */
+    .section3{
+      margin-top: 200px;
+      background-color: rgba(128, 128, 128, 0.202);
+      display: flex;
+      flex-flow: row wrap;
+      padding:90px;
+    }
+    .section3 .h2box1{
+      flex: 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .section3 .pbox1{
+      flex: 1 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    .section3 .pbox1 p{
+      text-align: center;
+      color: gray
+    }
+    .imgbox{
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+
+    .img1-1{
+      margin-right: 10px;
+      width: 48%;
+      display: flex;
+      height: 100%;
+    }
+    .img1{
+      width: 100%;
+      height: 100%;
+    }
+
+    .img2{
+      overflow: hidden;
+      width: 48%;
+      display: flex;
+      flex-flow: row wrap;
+    }
+    .img22{
+      flex: 1 100%;
+      display: flex;
+    }
+    .img23{
+      flex: 1 100%;
+      display: flex;
+    }
+
+
+    .img2 .img2-1{
+      
+      flex: 1 47%;
+      height: 100%;
+
+      margin-right: 10px;
+      margin-bottom: 10px;
+    }
+    .img2 .img2-2{
+      flex: 1 47%;
+      height: 100%;
+
+    }
+    .img2 .img2-3{
+      height: 100%;
+      flex: 1 47%;
+      margin-top: 10px
+    }
+    .img2 .img2-4{
+      
+      flex: 1  47%;
+      height: 100%;
+
+      margin-left: 10px;
+      margin-top: 10px;      
+    }
+    
+
+    .imgbox a{
+
+      width: 100%; height: 100%;
+      padding: 0px;
+      overflow: hidden;
+      position: relative;
+    }
+    .imgbox img{
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+
+    .imgbox figcaption{
+      height: 100%;
+      width: 100%; 
+      background-color: rgba(0, 0, 0, 0.676);
+      position: absolute;
+      top: 0; left: 0;
+
+      color: azure; text-align: center;
+      line-height: 300px;
+      opacity: 0;
+    }
+    .imgbox figure{
+      height: 100%;
+
+      width: 100%; 
+      overflow: hidden;
+    }
+
+    .imgbox .f1{
+      object-fit: cover;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.676);
+      position: absolute;
+      top: 0; left: 0;
+
+      color: azure; text-align: center;
+      opacity: 0;
+    }
+    .imgbox a:hover figcaption{
+      opacity: 1;transition: 0.5s;
+    }
+    .imgbox a:hover .f1{
+      opacity: 1;transition: 0.5s;
+    }
+
+    .imgbox .f1::after{
+      content: '';
+      display: block;
+      width: calc(100% - 450px);
+      height: calc(100% - 550px);
+      border: 1px solid white;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0; right: 0; top: 0; bottom: 0;
+      margin:auto
+    }
+    .imgbox figcaption::after{
+      content: '';
+      display: block;
+      width: calc(100% - 170px);
+      height: calc(100% - 250px);
+      border: 1px solid white;
+      box-sizing: border-box;
+      position: absolute;
+      left: 0; right: 0; top: 0; bottom: 0;
+      margin:auto
+    }
+    /* -------------------------   스타일 섹션3 끝 ------------------------ */
+
+    .S4imgbox {
+      width: 80%;
+      display: flex;
+      flex-flow: row wrap;
+      margin: 0 auto;
+    }
+
+    .S4imgbox .S4h2{
+      margin-top: 100px;
+      flex: 1 100%;
+      text-align: center;
+    }
+    .S4imgbox .S4pbox{
+      flex: 1 100%;
+      
+    }
+    .S4imgbox .S4pbox p{
+      text-align: center;
+      color: gray;
+    }
+    .S4imgbox .S4img1 {
+      overflow: hidden;
+
+      flex: 1 23%;
+      margin-right: 15px;
+
+    }
+    .S4imgbox .S4img2 {
+      overflow: hidden;
+
+      flex: 1 23%;
+      margin-right: 15px;
+
+    }
+    .S4imgbox .S4img3 {
+      overflow: hidden;
+
+      flex: 1 23%;
+      margin-right: 15px;
+    }
+    .S4imgbox .S4img4 {
+      overflow: hidden;
+
+      flex: 1 23%;
+      margin-right: 15px;
+
+    }
+    .S4imgbox1{
+      display: flex;
+      flex-flow: row wrap;
+      flex:1 40%
+    }
+    .S4imgbox2{
+      display: flex;
+      flex-flow: row wrap;
+      flex:1 40%
+
+    }
+
+    .S4imgbox a:hover img{
+      transform: scale(1.2);
+    }
+    .S4imgbox a:hover figcaption{
+      opacity: 1;
+    }
+    
+    .S4imgbox img{
+      transition: 0.5s;
+    }
+    .S4imgbox .S4img1-1{
+      overflow: hidden;
+    }
+    .S4imgbox .S4img2-1{
+      overflow: hidden;
+    }
+    .S4imgbox .S4img3-1{
+      overflow: hidden;
+    }
+    .S4imgbox .S4img4-1{
+      overflow: hidden;
+    }
+
+
+
+    .S4imgbox figcaption{
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.666);
+      position: absolute;
+      opacity: 0;
+      transition: 0.5s;
+      top: 0; left: 0;
+    }
+    .S4img1-1{
+      position: relative;
+    }
+    .S4img2-1{
+      position: relative;
+    }
+    .S4img3-1{
+      position: relative;
+    }
+    .S4img4-1{
+      position: relative;
+    }
+
+    .S4imgbox figure{
+      
+      width: 100%; height: 100%;
+    }
+    .S4imgbox a{
+      padding: 10px;
+      border: 1px solid rgba(128, 128, 128, 0.74);
+    }
+    .S4imgbox p{
+      margin-bottom: 0;
+    }
+    .S4imgbox figure{
+      margin-bottom: 0;
+
+    }
+    .S4imgbox .S4pbox{
+      margin-bottom: 80px;
+    }
+/* -------------------------   스타일 섹션4 끝 ------------------------ */
+   
+    .S5{
+      margin-top: 200px;
+      position: relative;
+      height: 300px;
+      margin-bottom: 150px;
+    }
+    .S5 .p1{
+      position: absolute;
+       top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: aliceblue;
+    }
+    .S5 .p2{
+      position: absolute;
+       top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: aliceblue;
+    }
+    .S5 button{
+      position: absolute;
+       top: 70%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: aliceblue;
+    }
+
+
+
+    /* ----------------------------스타일 섹션5끝 ------------------------- */
+    .S6{
+      display: flex;
+      width: 80%;
+      margin: 0 auto;
+      margin-bottom: 200px;
+      height: 200px;
+      flex-flow: row nowrap;
+
+      
+
+    }
+    .S6 .Tbox{
+      padding: 20px;
+      border: 1px solid gray;
+      flex: 1 60%;
+      margin-top: 40px;
+      min-width: 431px;
+    }
+    .S6 .S6box{
+      
+      flex: 1 20%;
+    }
+    .S6 .S6tr{
+      border-bottom: 1px solid gray;
+      display : flex;
+      justify-content: space-between;
+      height: 32px;
+    }
+
+    .S6 .S6tr h5{
+      color: black;
+    }
+    .S6 .S6tr span{
+      color: rgba(0, 0, 0, 0.644);
+      font-size: 15px;
+    }
+
+    .S6 .new1{
+      margin: 5px;
+      margin-left: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .S6 .new2{
+      margin: 5px;
+      margin-left: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+    .S6 .new3{
+      margin: 5px;
+      margin-left: 0px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .S6 .new1 a{
+      color: gray;
+      padding-right: 30px;
+    }
+    .S6 .new2 a{
+      color: gray;
+      padding-right: 30px;
+    }
+    .S6 .new3 a{
+      padding-right: 30px;
+      color: gray;
+    }
+
+
+    .S6box {
+      margin-top: 40px;
+      display: flex;
+    }
+
+    .S6box a{
+      width: 180px;
+      height: 100%;
+      overflow: hidden;
+      position: relative;
+      margin-left: 30px;
+    }
+
+    .S6box .S6box1{
+
+      position: absolute;
+      height: 100%;
+      width: 180px;
+      background-color: rgba(17, 0, 255, 0.79);
+    }
+    .S6box .S6box2{
+      position: absolute;
+      height: 100%;
+      width: 180px;
+      background-color: rgba(61, 222, 32, 0.874);
+    }
+    .S6box .S6box3{
+      position: absolute;
+      height: 100%;
+      width: 180px;
+      background-color: rgba(243, 16, 186, 0.822);
+    }
+
+    .S6box .S6box1 img{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .S6box .S6box2 img{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+    .S6box .S6box3 img{
+      height: 50px;
+      width: 50px;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 1;
+    }
+
+    .S6box .S6box1 .p2{
+      height: 50px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: aliceblue;
+      z-index: 1;
+
+    }
+
+    .S6box .S6box2 span{
+      height: 50px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: aliceblue;
+      z-index: 1;
+    }
+
+    .S6box .S6box3 span{
+      height: 50px;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: aliceblue;
+      z-index: 1;
+
+    }
+
+    .S6box figcaption{
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.695);
+      position: absolute;
+      top: 0; left: 0;
+      opacity: 0;
+      transition: 0.5s;
+
+    }
+
+    .S6box a:hover figcaption{
+      opacity: 1;
+    }
+    .S6box figure{
+      width: 100%; height: 100%;
+      position: relative;
+    }
+
+ 
+
+/* --------------------------------------------------회전목마----------------------------- */
+
+    .a123 figcaption{
+      width: 100%; height:870px;
+      background-color: rgba(0, 0, 0, 0.47);
+      position: absolute;
+      top: 40px; left:0;
+      z-index: 1;
+     }
+     .a123 figure{
+      width: 100%; height: 100%;
+     }
+
+     /* --------------------------------------------------회전목마어둡게----------------------- */
+
+
+
+     /* @media screen 
+        
+        and (max-width:777px){
+
+          #carouselExampleCaptions .p1{
+            font-size: 10px;  
+            768이하로 내려가면 폰트가 다 사라짐 이유모름..
+          }
+        } */
+        @media screen 
+        and  (max-width:768px) {
+
+          .imgbox{
+            display: flex;
+            flex-flow: row wrap;
+          }
+          .imgbox .img1{
+            margin: 0;
+          }
+          .section3 .imgbox .img1-1{
+            flex: 1 100%;
+            height: 50%;
+            margin: 0;
+            order: 1;
+          }
+            
+          .section3 .imgbox .img2{
+            flex: 1 100%;
+            order:2;
+          }
+          .S4imgbox1{
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1 100%;
+
+          }
+          .S4imgbox2{
+            margin-top: 10px;
+            display: flex;
+            flex-flow: row wrap;
+            flex: 1 100%;
+          }
+
+          .S6{
+            justify-content: center;
+            display: flex;
+            width: 80%;
+            margin: 0 auto;
+            margin-bottom: 200px;
+            height: 700px;
+            flex-flow: row wrap;
+
+          
+          }
+          .S6 .Tbox{
+            height: 200px;
+            padding: 20px;
+            border: 1px solid gray;
+            flex: 1 100%;
+            margin-top: 40px;
+          }
+          .S6 .S6box{ 
+            justify-content: center;
+            height: 500px;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            
+          }
+
+          .S6box a{
+            width: 100%;
+          }
+
+
+
+          .S6box .S6box1{
+
+            position: absolute;
+            height: 100%;
+            width: 90%;
+
+            background-color: rgba(17, 0, 255, 0.79);
+          }
+            .S6box .S6box2{
+            position: absolute;
+            height: 100%;
+            width: 50%;
+
+            background-color: rgba(61, 222, 32, 0.874);
+          }
+            .S6box .S6box3{
+            position: absolute;
+            height: 100%;
+            width: 30%;
+            background-color: rgba(243, 16, 186, 0.822);
+          }
+        }
+
+
+
+        
+
+  </style>
+
+
+
+
+
+
+  <div class="a123">
+    <figure>
+      <figcaption></figcaption>
+    </figure>
+  </div>
+<!-- ----------------------회전목마 어둡게 ----------------------- -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
+      <li data-target="#carouselExampleCaptions" data-slide-to="3"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="./img/product/1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5 class="h5-1">First slide label</h5>
+          <p class="p1">Some representative placeholder content for the first slide.</p>
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/product/2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5 class="h5-1">Second slide label</h5>
+          <p class="p1">Some representative placeholder content for the second slide.</p>
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/product/3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5 class="h5-1">Third slide label</h5>
+          <p class="p1">Some representative placeholder content for the third slide.</p>
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="./img/product/4.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+            <h5 class="h5-1">Third slide label</h5>
+          <p class="p1">Some representative placeholder content for the third slide.</p>
+          <button type="button" class="btn btn-primary btn-lg">Large button</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleCaptions" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleCaptions" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </button>
+  </div>
+
+
+
+<!-- 섹션2 -->
+<div class="section2">
+  <div class="h2box">
+    <h2>THE SPECIAL DESIGN GROUP</h2>
+  </div>
+  <div class="pbox">
+    <p>파이브스톤은 다양한 환경에 적응하며 경쟁하기 위해 디자인 역량과 기술력에 집중하고<br>
+      고객과의 친밀한 소통과 협력을 통해 최고의 품질을 제공하고 있습니다.</p>
+  </div>
+  <div class="btnbox">
+    <button type="button" class="btn btn-outline-primary">Primary</button>
+  </div>
+</div>
+
+
+<!-- 섹션3 -->
+<div class="section3">
+  <div class="h2box1">
+    <h2>THE SPECIAL DESIGN GROUP</h2>
+  </div>
+  <div class="pbox1">
+    <p>파이브스톤은 다양한 환경에 적응하며 경쟁하기 위해 디자인 역량과 기술력에 집중하고<br>
+      고객과의 친밀한 소통과 협력을 통해 최고의 품질을 제공하고 있습니다.</p>
+  </div>
+  <div class="imgbox">
+    <div class="img1-1">
+      <a href="#" class="img1">
+        <figure>
+          <img src="./img/m-op01.jpg" alt="이미지1">
+          <figcaption class="f1">자세히보기</figcaption>
+        </figure>
+      </a>
+    </div>
+    <div class="img2">
+      <div class="img22">
+        <a href="#" class="img2-1">
+          <figure>
+            <img src="./img/m-op02.jpg" alt="이미지1">
+            <figcaption>자세히보기</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="img2-2">
+          <figure>
+            <img src="./img/m-op03.jpg" alt="이미지2">
+            <figcaption>자세히보기</figcaption>
+          </figure>
+        </a>
+      </div>
+      <div class="img23">
+        <a href="#" class="img2-3">
+          <figure>
+            <img src="./img/m-op04.jpg" alt="이미지3">
+            <figcaption>자세히보기</figcaption>
+          </figure>
+        </a>
+        <a href="#" class="img2-4">
+          <figure>
+            <img src="./img/m-op05.jpg" alt="이미지4">
+            <figcaption>자세히보기</figcaption>
+          </figure>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+<!-- 섹션4 -->
+
+<div class="S4imgbox">
+  <div class="S4h2">
+    <h2>BUSINESS</h2>
+  </div>
+  <div class="S4pbox">
+    <p>파이브스톤은 정직과 신뢰,디자인으로 고객과 함께 합니다.</p>
+  </div>
+  <div class="S4imgbox1">
+    <a href="#" class="S4img1">
+      <div class="S4img1-1">
+        <figure>
+          <img src="./img/m-mb02.jpg" alt="이미지2">
+          <figcaption></figcaption>
+        </figure>
+      </div>
+      <p style="font-size: 20px; color: black;">사업분야01</p>
+      <p style="color: gray ">고객의 필요와 사업환경에 따라 맞춤형 디자인으로 보다 큰 감동을 드립니다.</p>
+    </a>
+    <a href="#" class="S4img2">
+      <div class="S4img2-1">
+        <figure>
+          <img src="./img/m-mb03.jpg" alt="이미지3">
+          <figcaption></figcaption>
+        </figure>
+      </div>
+      <p style="font-size: 20px; color: black;">사업분야02</p>
+      <p style="color: gray ">고객의 필요와 사업환경에 따라 맞춤형 디자인으로 보다 큰 감동을 드립니다.</p>
+    </a>
+  </div>
+  <div class="S4imgbox2">
+    <a href="#" class="S4img3">
+      <div class="S4img3-1">
+        <figure>
+          <img src="./img/m-mb04.jpg" alt="이미지4">
+          <figcaption></figcaption>
+        </figure>
+      </div>
+      <p style="font-size: 20px; color: black;">사업분야03</p>
+      <p style="color: gray ">고객의 필요와 사업환경에 따라 맞춤형 디자인으로 보다 큰 감동을 드립니다.</p>
+    </a>
+    <a href="#" class="S4img4">
+      <div class="S4img4-1">
+        <figure>
+          <img src="./img/m-mb01.jpg" alt="이미지1">
+          <figcaption></figcaption>
+        </figure>
+      </div>
+      <p style="font-size: 20px; color: black;">사업분야04</p>
+      <p style="color: gray ">고객의 필요와 사업환경에 따라 맞춤형 디자인으로 보다 큰 감동을 드립니다.</p>
+    </a>
+  </div>
+</div>
+
+
+
+<!-- 섹션5 -->
+<div class="S5">
+  <img src="./img/product/sub-visual02.jpg"  alt=""> 
+  
+    <p class="p1"> 안녕하세요</p>
+    <p class="p2">저는 바보입니다</p>
+    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+</div>
+
+<!-- 섹션6 -->
+
+<h2 style="text-align: center;">CS CENTER</h2>
+<p style="text-align: center; color: gray;">파이브스톤은 정직과 신뢰,디자인으로 고객과 함께합니다.</p>
+<div class="S6">
+  <div class="Tbox">
+    <table>
+      <tr>
+        <div class="S6tr">
+          <a href="#" class="h5">
+            <h5>공지사항</h5>
+          </a>
+          <a href="#" class="span"><span>더보기</span></a>
+        </div>
+      </tr>
+      <tr>
+        <div class="new1">
+          <a href="#">새로운공지사항입니다</a>
+          <a href="#">2222-22-22</a>
+        </div>
+        <div class="new2">
+          <a href="#">새로운공지사항입니다</a>
+          <a href="#">2222-22-22</a>
+        </div>
+        <div class="new3">
+          <a href="#">새로운공지사항입니다</a>
+          <a href="#">2222-22-22</a>
+        </div>
+      </tr>
+    </table>
+  </div>
+  <div class="S6box">
+    <a href="#">
+      <div class="S6box1">
+        <figure>
+          <img src="./img/m-os01.png" alt="">
+          <span class="p2">안녕하세요</span>
+          <figcaption></figcaption>
+        </figure>
+      </div>
+    </a>
+    <a href="#">
+      <div class="S6box2">
+        <figure>
+          <img src="./img/m-os02.png" alt="">
+          <span class="p2">안녕하세요</span>
+          <figcaption></figcaption>
+        </figure>
+      </div>
+    </a>
+    <a href="#">
+      <div class="S6box3">
+        <figure>
+          <img src="./img/m-os03.png" alt="">
+          <span class="p2">안녕하세요</span>
+          <figcaption></figcaption>
+        </figure>
+      </div>
+    </a>
+  </div>
+</div>
+
+
+<script>
+  
+            $('.carousel').carousel({ 
+            interval: 3000, //기본 5초 
+            keyboard: true, //키보드이벤트 설정
+            pause: false,//마우스를 가져대면 자동 순환이 멈춘다.
+            wrap: true, //순환설정
+            touch: true //왼쪽 오른쪽 드래그 설정
+            }) 
+          function h5Transition(a) {
+            $('#carouselExampleCaptions').on('slide.bs.carousel',function () {
+              $('.h5-1').eq(a).animate({top:'-550px',opacity:0 },0)
+            })
+            $('#carouselExampleCaptions').on('slid.bs.carousel',function () {
+              $('.h5-1').eq(a).fadeIn(500).animate({top:'-500px',opacity:1},500)
+            })
+          }  
+          h5Transition(0)
+          h5Transition(1)
+          h5Transition(2)
+          h5Transition(3)
+
+          function PTransition(a) {
+            $('#carouselExampleCaptions').on('slide.bs.carousel',function () {
+              $('.p1').eq(a).animate({top:'-350px',opacity:0 },0)
+            })
+            $('#carouselExampleCaptions').on('slid.bs.carousel',function () {
+              $('.p1').eq(a).fadeIn(500).animate({top:'-400px',opacity:1},600)
+            })
+          }  
+          PTransition(0)
+          PTransition(1)
+          PTransition(2)
+          PTransition(3)
+          function BtnTransition(a) {
+          $('#carouselExampleCaptions').on('slide.bs.carousel',function () {
+              $('.btn').eq(a).animate({top:'-280px',opacity:0 },0)
+            })
+            $('#carouselExampleCaptions').on('slid.bs.carousel',function () {
+              $('.btn').eq(a).fadeIn(500).animate({top:'-330px',opacity:1},700)
+            })
+          }
+          BtnTransition(0)
+          BtnTransition(1)
+          BtnTransition(2)
+          BtnTransition(3)
+          //--------------------------섹션1 끝----------------------------------
+  </script>
+</script>

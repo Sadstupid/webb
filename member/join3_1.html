@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>아이디 중복확인</title>
+    
+    <link rel="stylesheet" href="../css/member/join.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <!-- Bootstarp JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    
+    <script>
+
+        $(document).ready(function(){
+        $('#headerTop').load(".../headerTop-sub.html");
+        $('#header').load(".../header-sub.html");     
+        $('#footer').load(".../footer-sub.html");
+        });
+
+        function searchid() {
+            opener.document.getElementById('pid').value = document.getElementById('cid').value;
+            self.close();
+        };
+
+        function search() {
+            var span1 = document.getElementById('span1');
+            var span2 = document.getElementById('span2');
+            var span3 = document.getElementById('span3');
+            span1.innerHTML = "<span style='font-size: 13px; font-weight: bold; color: orangered;'>입력하신 아이디는 사용가능합니다.</span>";
+            span2.innerHTML = "<span style='font-size: 13px; font-weight: 200;'>확인버튼을 눌러주세요.</span>";
+            span3.innerHTML = "<img src='../img/member/btn_confirm02.gif' onClick='searchid();' style='cursor: pointer'>";
+
+        };
+
+    </script>
+
+
+</head>
+<body>
+    <form name="join3_1form">
+        <div class="joinbox">
+            <div class="joinbox1">
+                <span>아이디 중복확인</span>
+            </div>
+            <div class="joinbox2">
+                <span><input type="text" id="cid" name="id" style="width: 190px; height: 20px; margin-right: 5px;"><img src="../img/member/btn_search.gif" value="아이디찾기" onClick="search()" style="cursor: pointer;"></span>
+            </div>
+            <span id="span1"></span><br>
+            <span id="span2"></span>
+            <span id="span3" class="span3"></span>
+            <div class="joinbox3">
+                <span class="span4"><img src="../img/member/btn_close.gif" value="창닫기" onClick="window.close()" style="cursor: pointer;"></span>
+            </div>
+        </div>
+        </form>
+</body>
+</html>

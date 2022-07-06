@@ -1,0 +1,39 @@
+.tit01 {
+    font-size: 28px;
+    margin: 50px 0 0px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #222;;
+  }
+.tit02 {
+  font-size: 13px;
+  margin: 5px 0 45px 0;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+table {
+  width: 100%;
+  overflow: hidden; white-space:nowrap;
+}
+.td01 {
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  color: #444;
+}
+.td02 {
+  width: 78%;
+  border-left: 1px solid #e1e1e1;
+  font-size: 14px;
+  font-weight: normal;
+  padding: 1.2% 0% 1.2% 3%;
+  color: #777;
+}
+.td03 {
+  font-size: 14px;
+  font-weight: normal;
+  padding: 1.2% 0% 1.2% 2%;
+  color: #777;
+}

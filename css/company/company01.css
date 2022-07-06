@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+    list-style: none;
+  }
+  .col-lg-6 {
+    width: 50%;
+    float: left;
+  }
+  .col-sm-3 {
+    margin-bottom: 60px;
+  }
+  @media (max-width: 767px) {
+    .col-sm-3 {
+    width: 50%;
+    float: left;
+    }
+    .container02 {
+      height: 400px;
+    }
+  }  
+  @media (min-width: 767px) {
+    .col-sm-3 {
+    width: 25%;
+    float: left;
+    }
+  }  
+  .container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .container02 {
+    padding: 70px 0 0 0;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background-color: #f6f6f6;
+  }
+  @media (max-width: 1024px){
+    .container02 {
+    padding: 30px 0 30px 0;
+    height: 800px;
+    }
+    .col-lg-6 {
+      width: 100%;
+      float: none;
+      overflow: hidden; white-space:nowrap;
+    }
+    .ts03 {
+      font-size: 12px;
+    }
+    .co-wrap h3 {
+      font-size: 12px;
+      color: #333;
+      margin-top: 10px;
+    }
+    .co-wrap h5 {
+      font-size: 8px;
+    }
+    .tit03 {
+      font-size: 24px;
+    }
+  }
+  .container-sc {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  @media (min-width: 1280px){
+    .container-sc {
+      width: 1000px;
+    }
+  }
+  div {
+    display: block;
+  }
+  .tit01 {
+    font-size: 28px;
+    margin: 50px 0 0px 0;
+    text-align: center;
+    font-weight: 500;
+    color: #222;;
+  }
+  .tit02 {
+    font-size: 13px;
+    margin: 5px 0 45px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #999;
+  }
+  .tit03 {
+    font-size: 36px;
+    margin: 0;
+    text-align: center;
+    font-weight: normal;
+    color: #222;
+  }
+  .tit04 {
+    font-size: 17px;
+    margin: 5px 0 60px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #999;
+  }
+  .ts01 {
+    font-size: 28px;
+    margin: 0 0 20px 0;
+    text-align: center;
+    font-weight: normal;
+    color: #444;;
+  }
+  .ts02 {
+    font-size: 15px;
+    margin: 0 0 80px 0;
+    text-align: center;
+    color: #777;
+    font-weight: normal;
+  }
+  .ts03 {
+    font-size: 28px;
+    margin: 20px 0 20px 0;
+    color: #444;
+    font-weight: normal;
+  }
+  .ts04 {
+    font-size: 14px;
+    margin: 0px 0 30px 0;;
+    color: #555;
+    font-weight: normal;
+  }
+  .tb01 {
+    font-size: 15px;
+    color: #666;
+    padding-left: 10px;
+    margin-bottom: 5px;
+    background: url(../img/company/blet01.png) 0 8px;
+    background-repeat: no-repeat;
+  }
+  .tab {
+    font-weight: 500;
+  }
+  .fivestone {
+    color: red;
+  }
+  .responsive {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .responsive02 {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  img {
+    vertical-align: middle;
+    border: 0;
+  }
+  .row {
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+  .co-wrap {
+    text-decoration: none;
+    background: #f6f6f6;
+    border: 1px solid #999;
+    padding: 80px 15px 50px 15px;
+  }
+  .co-title {
+    text-align: center;
+  }
+  .co-wrap h3 {
+    font-size: 17px;
+    color: #333;
+    margin-top: 15px;
+  }
+  .co-wrap h5 {
+    font-size: 13px;
+    font-weight: normal;
+    color: #888;
+  }
+  .line {
+    border-top: 1px solid #e1e1e1;
+    margin-left: 10%;
+    margin-bottom: 60px;
+    width: 80%;
+  }
+  dl {
+    display: flex;
+    flex-direction: row;
+    margin-left: 100px;
+  }
+  .hs01 {
+    font-size: 15px;
+    color: #777;
+    margin: 15px;
+    font-weight: normal;
+    padding-left: 20px;
+  }

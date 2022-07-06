@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+
+  <!-- Main CSS : Header, Main, Footer -->
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/member/join.css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <!-- Bootstarp JS -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function(){
+      $('#headerTop').load("../headerTop-sub.html");
+      $('#header').load("../header-sub.html");     
+      $('#footer').load("../footer-sub.html");
+    });
+
+    function CheckEmail(str) {
+      var reg_email = /^([0-9a-zA-Z_\.-]+)@([0-9a-zA-Z_-]+)(\.[0-9a-zA-Z_-]+){1,2}$/;
+      if(!reg_email.test(str)) {
+        return false;
+      }else{
+        return true;
+      }
+    }
+    function GoToEnroll() {
+      var obEmail = document.getElementById("email");
+      if (!obEmail.value) {
+        alert("이메일을 입력하세요!");
+        obEmail.focus();
+        return;
+      }else{
+        if(!CheckEmail(obEmail.value)) {
+          alert("이메일 형식이 잘못되었습니다");
+          obEmail.focus();
+          return;
+        }
+      }
+      window.name = "joinform"
+      window.open("./join1.html", "join1form");
+    }
+
+
+  </script>
+
+</head>
+<body>
+  <!-- 헤더 -->
+  <div id="headerTop"></div>
+  <div id="header" class="sticky-top"></div>
+
+  <!-- 메인 -->
+  <!-- COMMON -->
+  <div class="commonSection1">
+    <div class="commonContent1">
+      <img src="../img/member/sub-visual02.jpg" 
+          style="width: 100%; height: 100%;">
+      <div class="commonContent2 text-center">
+        <div>
+          <h3>MEMBER</h3>
+        </div>
+        <div>
+          <p><img src="../img/icon-home.png"> > 회원가입</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 메인 -->
+  <!-- 회원가입 -->
+  <form name="joinform">
+  <div class="container">
+    <div class="tit01">회원가입</div>
+    <div class="tit02">The design and maintenance are excellent.</div>
+    <div class="box01">
+      <p class="sp01">OOO사이트에 오신 것을 환영합니다.</p>
+      <span class="sp02">-이름과 이메일을 입력해주시면 가입여부를 확인 후 회원가입 절차가 이루어집니다.</span>
+    </div>
+    <div class="box02">
+      <div class="box03">
+        <img src="../img/member/img_name.gif"><br>
+        <input class="input" type="text" id="id" name="id"><br>
+        <img src="../img/member/img_email.gif"><br>
+        <input class="input" type="text" id="email" name="email">
+      </div>
+      <div class="box04">
+        <img src="../img/member/btn_confirm01.gif" width="75px" value="회원가입여부열기" onClick="javascript:GoToEnroll()" style="cursor: pointer;" >
+      </div>
+    </div>
+  </div>
+  </form>
+
+  <!-- 푸터 -->
+  <div id="footer"></div>
+
+  <script>
+    
+  </script>
+</body>
+</html>
